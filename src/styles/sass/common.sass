@@ -1,0 +1,58 @@
+@import "mixin"
+html,
+body,
+.body,
+#app
+  padding: 0
+  background-color: #f4f4f4
+  width: 100%
+  height: 100%
+  //overflow: hidden
+  line-height: 1
+  max-width: $max-width
+  margin: 0 auto
+  font-family: -apple-system, BlinkMacSystemFont,"Montserrat Regular","微软雅黑","Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif
+input:focus,
+button:focus,
+select:focus,
+textarea:focus
+  outline: none
+
+input,
+button,
+select,
+textarea
+  border: none
+textarea
+  font-size: 14px
+  resize: none
+/**
+//清楚浏览器自带样式
+h3
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-margin-end: 0
+// 去除iOS点击可点击区域的黑色背景
+  -webkit-tap-highlight-color: transparent
+// 去除input date类型的默认样式
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+input[type="month"]::-webkit-calendar-picker-indicator,
+input[type="week"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator
+  display: none
+input[type="date"]::-webkit-clear-button,
+input[type="datetime-local"]::-webkit-clear-button,
+input[type="month"]::-webkit-clear-button,
+input[type="week"]::-webkit-clear-button,
+input[type="time"]::-webkit-clear-button
+  display: none
+input
+  -webkit-appearance: none
+  background-color: transparent
+p
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+a:active
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
